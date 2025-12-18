@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let t of liste | async">
+    {{ t.titre }}
+    <button (click)="del(t.id)" >Delete</button>
+  </li>
+</ul>
